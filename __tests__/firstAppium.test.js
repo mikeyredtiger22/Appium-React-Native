@@ -1,0 +1,34 @@
+import wd from 'wd';
+
+jasmine.DEFAULT_TIMEOUT_INTERVAL = 10000;
+const PORT = 4723;
+const config = {
+  platformName: 'Android',
+  deviceName: 'Android Emulator',
+  // app: './android/app/build/outputs/apk/app-debug.apk' // relative to root of project
+};
+const driver = wd.promiseChainRemote('localhost', PORT);
+
+
+beforeAll(async () => {
+  await driver.init(config);
+  await driver.sleep(2000); // wait for app to load
+});
+
+test('appium renders', async () => {
+  let contexts = await driver.contexts();
+  console.log('CONTEXTS:::');
+  console.log(contexts);
+  expect(await driver.hasElementByAccessibilityId('testview')).toBe(true);
+  expect(await driver.hasElementByAccessibilityId('notthere')).toBe(false);
+});
+
+test('appium button click', async () => {
+  expect(await driver.hasElementByAccessibilityId('counterInc')).toBe(true);
+  await driver.elementByAccessibilityId('counterInc')
+  .click()
+  .click();
+
+  const counter = await driver.elementByAccessibilityId('counter').text();
+  expect(counter).toBe('2');
+});

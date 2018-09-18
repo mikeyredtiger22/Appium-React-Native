@@ -2,25 +2,37 @@
   "name": "my-appium-test-app",
   "version": "0.1.0",
   "private": true,
-  "devDependencies": {
-    "react-native-scripts": "1.14.0",
-    "jest-expo": "~27.0.0",
-    "react-test-renderer": "16.3.1"
-  },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "jest"
-  },
-  "jest": {
-    "preset": "jest-expo"
+    "start:appium": "appium",
+    "test": "jest",
+    "test:e2e:android": "E2E_DEVICE=\"android-emulator\" jest --testMatch=\"**/__tests__/**/*test.js\""
   },
   "dependencies": {
     "expo": "^27.0.1",
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "~0.55.2",
+    "wd": "1.10.3"
+  },
+  "devDependencies": {
+    "jest-expo": "~27.0.0",
+    "react-native-scripts": "1.14.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "e2e": {
+    "devices": {
+      "android-emulator": {
+        "platformName": "Android",
+        "deviceName": "Android Emulator",
+        "app": "./android/app/build/outputs/apk/app-release.apk"
+      }
+    }
   }
 }

@@ -38,7 +38,8 @@ export default class App extends React.Component {
         <Button title='play/pause timer' onPress={() => this.handlePlayPauseTimer()}/>
         <Text>Counter: {this.state.counter}</Text>
         <View>
-          <Button title='  +  ' onPress={() => this.handleIncrementCounter()}/>
+          <Button title='  +  ' onPress={() => this.handleIncrementCounter()}
+                  accessibilityLabel='counterInc'/>
         </View>
       </View>
     );
