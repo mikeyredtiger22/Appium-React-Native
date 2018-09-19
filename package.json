@@ -8,7 +8,7 @@
     "ios": "react-native run-ios",
     "start:appium": "appium",
     "test": "jest",
-    "test:e2e:android": "E2E_DEVICE=\"android-emulator\" jest --testMatch=\"**/__tests__/**/*test.js\""
+    "test:e2e:android": "E2E_DEVICE=\"android-emulator\" jest --detectOpenHandles --testMatch=\"**/__tests__/**/*test.js\""
   },
   "dependencies": {
     "react": "16.3.1",
@@ -16,6 +16,7 @@
     "wd": "1.10.3"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.2",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "jest": "^23.6.0",
     "jest-react-native": "^18.0.0",
@@ -28,8 +29,8 @@
     "devices": {
       "android-emulator": {
         "platformName": "Android",
-        "deviceName": "Android Emulator",
-        "app": "./android/app/build/outputs/apk/app-release.apk"
+        "deviceName": "EMULATOR1",
+        "app": "./android/app/build/outputs/apk/app-debug.apk"
       }
     }
   }
