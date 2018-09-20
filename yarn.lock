@@ -429,7 +429,7 @@
     lodash "^4.17.10"
     to-fast-properties "^2.0.0"
 
-"@types/jest@^23.3.2":
+"@types/jest@23.3.2":
   version "23.3.2"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.3.2.tgz#07b90f6adf75d42c34230c026a2529e56c249dbb"
 
@@ -571,7 +571,7 @@ append-transform@^0.4.0:
   dependencies:
     default-require-extensions "^1.0.0"
 
-appium-adb@^6.15.0, appium-adb@^6.15.2, appium-adb@^6.19.0, appium-adb@^6.2.1, appium-adb@^6.2.2, appium-adb@^6.5.2, appium-adb@^6.8.0:
+appium-adb@^6.15.2, appium-adb@^6.19.0, appium-adb@^6.2.1, appium-adb@^6.2.2, appium-adb@^6.5.2, appium-adb@^6.8.0:
   version "6.19.0"
   resolved "https://registry.yarnpkg.com/appium-adb/-/appium-adb-6.19.0.tgz#082ada2f0adfeee10ef04728a79af4005b6e7048"
   dependencies:
@@ -594,19 +594,6 @@ appium-android-bootstrap@^2.11.0:
     appium-base-driver "^3.0.0"
     appium-support "^2.5.0"
     appium-uiautomator "^1.1.0"
-    babel-runtime "=5.8.24"
-    bluebird "^3.5.1"
-    lodash "^4.17.5"
-    net "^1.0.2"
-    source-map-support "^0.5.3"
-    teen_process "^1.3.1"
-
-appium-android-bootstrap@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/appium-android-bootstrap/-/appium-android-bootstrap-3.0.0.tgz#7ed2f46f8a64f9007e0ab9f56f14d918d5c67b29"
-  dependencies:
-    appium-base-driver "^3.0.0"
-    appium-support "^2.5.0"
     babel-runtime "=5.8.24"
     bluebird "^3.5.1"
     lodash "^4.17.5"
@@ -639,33 +626,6 @@ appium-android-driver@2.x:
     temp "^0.8.3"
     ws "^5.0.0"
     yargs "^11.0.0"
-
-appium-android-driver@3.x:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/appium-android-driver/-/appium-android-driver-3.7.0.tgz#c588b3d5fb1ad49c0a38226f9dc69eb5e93dec84"
-  dependencies:
-    appium-adb "^6.15.0"
-    appium-android-bootstrap "^3.0.0"
-    appium-android-ime "^2.0.0"
-    appium-base-driver "^3.0.0"
-    appium-chromedriver "^4.0.0"
-    appium-support "^2.13.0"
-    appium-unlock "^2.0.0"
-    asyncbox "^2.0.4"
-    babel-runtime "=5.8.24"
-    bluebird "^3.4.7"
-    io.appium.settings "^2.4.0"
-    jimp "^0.2.24"
-    lodash "^4.17.4"
-    moment "^2.22.2"
-    portfinder "^1.0.6"
-    shared-preferences-builder "^0.0.4"
-    shell-quote "^1.6.1"
-    source-map-support "^0.5.5"
-    teen_process "^1.9.0"
-    temp "^0.8.3"
-    ws "^6.0.0"
-    yargs "^12.0.1"
 
 appium-android-driver@^4.0.0:
   version "4.1.0"
@@ -767,8 +727,8 @@ appium-chromedriver@^4.0.0:
     teen_process "^1.3.1"
 
 appium-espresso-driver@>=1.0.0-beta.13:
-  version "1.0.0-beta.15"
-  resolved "https://registry.yarnpkg.com/appium-espresso-driver/-/appium-espresso-driver-1.0.0-beta.15.tgz#a9b75962bc96d025c0320c7c9498987765ecd003"
+  version "1.0.0-beta.16"
+  resolved "https://registry.yarnpkg.com/appium-espresso-driver/-/appium-espresso-driver-1.0.0-beta.16.tgz#c58c6242435879d79319425993b40d09e3100f21"
   dependencies:
     appium-adb "^6.15.2"
     appium-android-driver "^4.0.0"
@@ -777,7 +737,7 @@ appium-espresso-driver@>=1.0.0-beta.13:
     asyncbox "^2.3.1"
     babel-runtime "=5.8.24"
     bluebird "^3.5.0"
-    lodash "=4.17.9"
+    lodash "^4.17.11"
     portscanner "^2.1.1"
     request-promise "^4.2.1"
     source-map-support "^0.5.8"
@@ -1077,11 +1037,11 @@ appium-youiengine-driver@1.x:
     selenium-webdriver "3.x"
     shelljs "0.8.x"
 
-appium@^1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/appium/-/appium-1.9.0.tgz#4c60943ff6521c5249f8c718a5ba0db28773ad15"
+appium@1.9.1-beta2:
+  version "1.9.1-beta2"
+  resolved "https://registry.yarnpkg.com/appium/-/appium-1.9.1-beta2.tgz#3947cd04356427a2fcb2ad876553126db1e50950"
   dependencies:
-    appium-android-driver "3.x"
+    appium-android-driver "^4.0.0"
     appium-base-driver "3.x"
     appium-espresso-driver ">=1.0.0-beta.13"
     appium-fake-driver "^0.x"
@@ -1484,7 +1444,7 @@ babel-helpers@^6.24.1:
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
 
-babel-jest@^23.0.1, babel-jest@^23.6.0:
+babel-jest@23.6.0, babel-jest@^23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-23.6.0.tgz#a644232366557a2240a0c083da6b25786185a2f1"
   dependencies:
@@ -1836,7 +1796,7 @@ babel-preset-jest@^23.2.0:
     babel-plugin-jest-hoist "^23.2.0"
     babel-plugin-syntax-object-rest-spread "^6.13.0"
 
-babel-preset-react-native@^4.0.0:
+babel-preset-react-native@4.0.1, babel-preset-react-native@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/babel-preset-react-native/-/babel-preset-react-native-4.0.1.tgz#14ff07bdb6c8df9408082c0c18b2ce8e3392e76a"
   dependencies:
@@ -4151,7 +4111,7 @@ jest-mock@^23.2.0:
   version "23.2.0"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-23.2.0.tgz#ad1c60f29e8719d47c26e1138098b6d18b261134"
 
-jest-react-native@^18.0.0:
+jest-react-native@18.0.0:
   version "18.0.0"
   resolved "https://registry.yarnpkg.com/jest-react-native/-/jest-react-native-18.0.0.tgz#77dd909f069324599f227c58c61c2e62168726ba"
 
@@ -4289,7 +4249,7 @@ jest-worker@^23.2.0:
   dependencies:
     merge-stream "^1.0.1"
 
-jest@^23.6.0:
+jest@23.6.0:
   version "23.6.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-23.6.0.tgz#ad5835e923ebf6e19e7a1d7529a432edfee7813d"
   dependencies:
@@ -4600,13 +4560,9 @@ lodash@4.17.10:
   version "4.17.10"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
-lodash@4.x, lodash@^4.0.0, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.17.9, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
+lodash@4.x, lodash@^4.0.0, lodash@^4.13.1, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.17.9, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.8.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-
-lodash@=4.17.9:
-  version "4.17.9"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.9.tgz#9c056579af0bdbb4322e23c836df13ef2b271cb7"
 
 lodash@^3.10.0, lodash@^3.5.0:
   version "3.10.1"
@@ -5872,7 +5828,7 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-test-renderer@^16.3.1:
+react-test-renderer@16.5.2:
   version "16.5.2"
   resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.5.2.tgz#92e9d2c6f763b9821b2e0b22f994ee675068b5ae"
   dependencies:
