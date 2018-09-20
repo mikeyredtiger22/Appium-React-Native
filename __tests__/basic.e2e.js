@@ -1,7 +1,7 @@
 import wd from 'wd';
 const config = {
   platformName: 'Android',
-  deviceName: 'EMULATOR1',
+  deviceName: 'Android Emulator',
   app: './android/app/build/outputs/apk/app-debug.apk'
 };
 

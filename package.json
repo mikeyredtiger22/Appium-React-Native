@@ -5,33 +5,25 @@
   "scripts": {
     "start": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start:appium": "appium",
+    "start-appium-server": "appium",
     "test": "jest",
-    "test:e2e:android": "E2E_DEVICE=\"android-emulator\" jest --detectOpenHandles --testMatch=\"**/__tests__/**/*test.js\""
+    "test-android": "jest --testMatch=\"**/__tests__/**/*test.js\""
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "~0.55.2",
-    "wd": "1.10.3"
+    "react-native": "~0.55.2"
   },
   "devDependencies": {
     "@types/jest": "^23.3.2",
-    "babel-preset-react-native-stage-0": "^1.0.1",
+    "appium": "^1.9.0",
+    "babel-jest": "^23.0.1",
+    "babel-preset-react-native": "^4.0.0",
     "jest": "^23.6.0",
     "jest-react-native": "^18.0.0",
-    "react-test-renderer": "16.3.1"
+    "react-test-renderer": "^16.3.1",
+    "wd": "^1.10.3"
   },
   "jest": {
     "preset": "react-native"
-  },
-  "e2e": {
-    "devices": {
-      "android-emulator": {
-        "platformName": "Android",
-        "deviceName": "EMULATOR1",
-        "app": "./android/app/build/outputs/apk/app-debug.apk"
-      }
-    }
   }
 }
