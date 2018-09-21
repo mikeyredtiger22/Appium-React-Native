@@ -29,7 +29,7 @@ describe('App', () => {
       await driver.waitForElementByAccessibilityId('counterInc');
    */
 
-  test('app renders', async () => {
+  it('app renders', async () => {
     expect(await driver.hasElementByAccessibilityId('testview')).toBe(false);
     expect(await driver.hasElementByAccessibilityId('notthere')).toBe(false);
     expect(await driver.hasElementByAccessibilityId('counter')).toBe(true);
@@ -37,13 +37,13 @@ describe('App', () => {
   });
 
 
-  test('appium button click', async () => {
+  it('appium button click', async () => {
     let counterIncButton = await driver.elementByAccessibilityId('counterInc');
     counterIncButton.tap();
     counterIncButton.tap();
   });
 
-  test('appium button click', async () => {
+  it('appium button click', async () => {
     // expect(await driver.hasElementByAccessibilityId('counter')).toBe(true);
     let counter = await driver.elementByAccessibilityId('counter');
     expect(await counter.text()).toBe('Counter: 2');

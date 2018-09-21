@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "0.55.4",
+    "webdriverio": "^4.13.2"
   },
   "devDependencies": {
     "@types/jest": "23.3.2",
@@ -21,7 +22,10 @@
     "jest": "23.6.0",
     "jest-react-native": "18.0.0",
     "react-test-renderer": "16.5.2",
-    "wd": "1.10.3"
+    "wd": "1.10.3",
+    "wdio-appium-service": "0.2.3",
+    "wdio-dot-reporter": "0.0.10",
+    "wdio-jasmine-framework": "0.3.6"
   },
   "jest": {
     "preset": "react-native"
